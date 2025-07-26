@@ -4,7 +4,7 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 type Testimonial = {
   quote: string;
@@ -102,20 +102,8 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="object-center rounded-[12px]"
+                    className="object-contain object-center rounded-[12px] max-w-full max-h-full"
                   />
-                  {testimonial.link && (
-                    <a
-                      href={testimonial.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="absolute bottom-2 right-2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-colors"
-                      onClick={e => e.stopPropagation()}
-                      aria-label="View project repository on GitHub"
-                    >
-                      <Github size={24} className="text-black" />
-                    </a>
-                  )}
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -175,19 +163,34 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-6 md:pt-12">
-            <button
-              onClick={handlePrev}
-              className="h-7 w-7 rounded-full bg-secondary flex items-center justify-center group/button"
-            >
-              <IconArrowLeft className="h-4 w-4 md:h-5 md:w-5 text-foreground group-hover/button:rotate-12 transition-transform duration-300" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="h-7 w-7 rounded-full bg-secondary flex items-center justify-center group/button"
-            >
-              <IconArrowRight className="h-4 w-4 md:h-5 md:w-5 text-foreground group-hover/button:-rotate-12 transition-transform duration-300" />
-            </button>
+          <div className="flex items-center pt-6 md:pt-12">
+            <div className="flex gap-4">
+              <button
+                onClick={handlePrev}
+                className="h-7 w-7 rounded-full bg-secondary flex items-center justify-center group/button"
+              >
+                <IconArrowLeft className="h-4 w-4 md:h-5 md:w-5 text-foreground group-hover/button:rotate-12 transition-transform duration-300" />
+              </button>
+              <button
+                onClick={handleNext}
+                className="h-7 w-7 rounded-full bg-secondary flex items-center justify-center group/button"
+              >
+                <IconArrowRight className="h-4 w-4 md:h-5 md:w-5 text-foreground group-hover/button:-rotate-12 transition-transform duration-300" />
+              </button>
+            </div>
+            {testimonials[active].link && (
+              <a
+                href={testimonials[active].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto h-7 w-7 rounded-full bg-secondary flex items-center justify-center group/button transition-colors"
+                aria-label="View project repository on GitHub"
+                style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}
+                onClick={e => e.stopPropagation()}
+              >
+                <ArrowUpRight size={20} className="text-foreground" />
+              </a>
+            )}
           </div>
         </div>
       </div>

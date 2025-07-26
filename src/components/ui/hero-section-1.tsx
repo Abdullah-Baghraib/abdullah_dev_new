@@ -25,9 +25,20 @@ const transitionVariants = {
 }
 
 export function HeroSection() {
+    // Smooth scroll handler (moved to top-level HeroSection)
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const sectionId = href.substring(1);
+            const section = sectionId ? document.getElementById(sectionId) : document.body;
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
     return (
         <>
-            <HeroHeader />
+            <HeroHeader handleNavClick={handleNavClick} />
             <main className="overflow-hidden">
                 <div
                     aria-hidden
@@ -78,6 +89,7 @@ export function HeroSection() {
                                 <AnimatedGroup variants={transitionVariants}>
                                     <a
                                         href="#contact"
+                                        onClick={e => handleNavClick(e, '#contact')}
                                         className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
                                         <span className="text-foreground text-sm">Available for new projects</span>
                                         <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
@@ -137,7 +149,9 @@ export function HeroSection() {
                                             asChild
                                             size="lg"
                                             className="rounded-xl px-5 text-base">
-                                            <a href="#contact">
+                                            <a href="#contact"
+                                               onClick={e => handleNavClick(e, '#contact')}
+                                            >
                                                 <span className="text-nowrap">Let's Talk</span>
                                             </a>
                                         </Button>
@@ -159,7 +173,7 @@ const menuItems = [
     { name: 'Contact', href: '#contact' },
 ]
 
-const HeroHeader = () => {
+const HeroHeader = ({ handleNavClick }: { handleNavClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void }) => {
     const [menuState, setMenuState] = React.useState(false)
     const [isScrolled, setIsScrolled] = React.useState(false)
     const [activeSection, setActiveSection] = React.useState('')
@@ -219,6 +233,7 @@ const HeroHeader = () => {
                                         <li key={index}>
                                             <a
                                                 href={item.href}
+                                                onClick={e => handleNavClick(e, item.href)}
                                                 className={cn(
                                                     "text-muted-foreground hover:text-accent-foreground block duration-150",
                                                     isActive && "text-foreground font-medium"
@@ -241,6 +256,7 @@ const HeroHeader = () => {
                                             <li key={index}>
                                                 <a
                                                     href={item.href}
+                                                    onClick={e => handleNavClick(e, item.href)}
                                                     className={cn(
                                                         "text-muted-foreground hover:text-accent-foreground block duration-150",
                                                         isActive && "text-foreground font-medium"

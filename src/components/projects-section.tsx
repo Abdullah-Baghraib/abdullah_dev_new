@@ -11,6 +11,13 @@ const projectTestimonials = [
     link: 'https://play.google.com/store/apps/details?id=com.abdullahbaghraib.ayah',
   },
   {
+    quote: 'The official website for "Wafa Furniture" furniture company.',
+    name: 'Wafa Furniture',
+    designation: 'React , Tailwind CSS , Framer Motion',
+    src: '/assets/images/wafa-furniture.jpeg',
+    link: 'https://abdullah-baghraib.github.io/wafa-furniture/',
+  },
+  {
     quote: 'Ticket Station is a Flutter UI application for browsing movies and booking tickets.This project focuses on building a clean and modern user interface.',
     name: 'Ticket Station',
     designation: 'Flutter, Dart',
@@ -23,6 +30,13 @@ const projectTestimonials = [
     designation: 'Flutter, Dart, TMDB API',
     src: '/assets/images/Netflix_clone.jpeg',
     link: 'https://github.com/Abdullah-Baghraib/netflix_clone',
+  },
+  {
+    quote: 'A beautiful Spotify-style mobile application built with Flutter. ',
+    name: 'Spotify clone',
+    designation: 'Flutter, Dart,',
+    src: '/assets/images/spotify_clone.jpeg',
+    link: 'https://github.com/Abdullah-Baghraib/spotify_clone',
   },
   {
     quote: 'application showcases an extensive list of artists along with detailed information about them.Whether you\'re an art enthusiast or just curious about your favorite artist.',
