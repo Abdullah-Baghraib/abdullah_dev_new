@@ -101,6 +101,13 @@ const projectTestimonials = [
     src: '/assets/images/Movies_app.jpeg',
     link: 'https://github.com/Abdullah-Baghraib/movie_app',
   },
+    {
+    quote: 'platform that utilizes Stacks technology to expand the capabilities of Bitcoin. It allows for the development of decentralized applications (DApps), NFTs, and DeFi (Decentralized Finance) solutions on the Bitcoin blockchain.',
+    name: 'coinfusion stacks bitcoin platform',
+    designation: 'React , Tailwind CSS , Next.js',
+    src: '/assets/images/coinfusion_stacks_bitcoin_platform.jpeg',
+    link: 'https://github.com/Abdullah-Baghraib/coinfusion_stacks_bitcoin_platform',
+  },
 ];
 
 
