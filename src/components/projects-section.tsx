@@ -17,6 +17,13 @@ const projectTestimonials = [
     src: '/assets/images/wafa-furniture.jpeg',
     link: 'https://abdullah-baghraib.github.io/wafa-furniture/',
   },
+      {
+    quote: 'A simple and intuitive currency converter application built with React, TypeScript, and Vite. It allows users to convert between different currencies using real-time exchange rates.',
+    name: 'Forexly',
+    designation: 'React , Tailwind CSS , Next.js',
+    src: '/assets/images/Forexly.jpeg',
+    link: 'https://forexly.vercel.app/',
+  },
   {
     quote: 'Ticket Station is a Flutter UI application for browsing movies and booking tickets.This project focuses on building a clean and modern user interface.',
     name: 'Ticket Station',
