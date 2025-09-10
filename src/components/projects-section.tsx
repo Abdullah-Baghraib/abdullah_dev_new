@@ -126,7 +126,7 @@ export function ProjectsSection() {
         <AnimatedGroup preset="fade" className="mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 sm:mb-3 md:mb-4">Featured Projects</h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center max-w-2xl mx-auto px-2">
-            A selection of my most recent mobile development work and what my clients have to say about their experience.
+            A selection of my most recent development work.
           </p>
         </AnimatedGroup>
 

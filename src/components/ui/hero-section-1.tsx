@@ -106,11 +106,11 @@ export function HeroSection() {
                                         </div>
                                     </a>
                         
-                                    <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                        Mobile Developer Creating Exceptional Experiences
+                                    <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5rem]">
+                                        Software Engineer Creating Exceptional Experiences
                                     </h1>
                                     <p className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                        I build intuitive, responsive mobile applications with a focus on user experience and performance. Let's bring your ideas to life.
+                                        I build intuitive, responsive mobile applications and websites with a focus on user experience and performance. Let's bring your ideas to life.
                                     </p>
 
                                     <div className="flex justify-center gap-6 mt-6">

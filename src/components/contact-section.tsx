@@ -54,7 +54,7 @@ export function ContactSection() {
         <AnimatedGroup preset="fade" className="mb-6 sm:mb-8 md:mb-12 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 md:mb-4">Get In Touch</h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
-            I'm always open to discussing new projects, opportunities in mobile development, 
+            I'm always open to discussing new projects, opportunities in development, 
             or partnerships. Feel free to reach out.
           </p>
         </AnimatedGroup>
