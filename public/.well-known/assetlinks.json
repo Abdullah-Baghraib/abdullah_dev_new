@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.abdullahbaghraib.forexly",
+      "sha256_cert_fingerprints": [
+        "60:3D:52:0A:6E:A0:23:2E:9A:C6:BD:69:23:32:73:E5:2F:49:AF:C1:84:CF:97:96:6F:2E:4E:D8:19:2A:EB:DE"
+      ]
+    }
+  }
+]
