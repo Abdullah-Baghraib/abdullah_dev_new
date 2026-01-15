@@ -22,7 +22,7 @@ const projectTestimonials = [
     name: 'Wafa Furniture',
     designation: 'React, Tailwind CSS, Framer Motion',
     src: '/assets/images/wafa-furniture.jpeg',
-    link: 'https://abdullah-baghraib.github.io/wafa-furniture/',
+    link: 'https://wafa-furniture.vercel.app/',
   },
   {
     quote: 'A modern currency conversion web application engineered with React, TypeScript, and Vite. Delivers real-time exchange rate data in a high-performance, responsive user interface.',
